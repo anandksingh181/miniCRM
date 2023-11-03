@@ -61,7 +61,7 @@ class EmployeeController extends Controller
                             ->join("employees" , "companies.id", "=", "employees.company")
                             ->select("companies.name as company", "employees.first_name","employees.last_name"
                                 ,"employees.email","employees.phone","employees.profile_picture","employees.id")
-                           ->get();
+                           ->paginate(5);
 
     // dd($companies);
       return view('admin.listEmployee',['employee'=>$employee]);

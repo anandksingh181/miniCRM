@@ -51,7 +51,7 @@ class CompanyController extends Controller
      */
     public function show(string $id)
     {
-        $company = DB::table("companies")->get();
+        $company = DB::table("companies")->paginate(5);
         return view('admin.listCompany',['companies'=> $company]);
     }
 

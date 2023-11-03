@@ -64,9 +64,9 @@
                             </tbody>
                           </table>
                           <!-- End Table with hoverable rows -->
-                          {{-- <div class="mt-5">
-                            {{ $categories->links() }}
-                          </div> --}}
+                          <div class="mt-5">
+                            {{ $employee->links() }}
+                          </div>
                         </div>
                       </div>
                 </div>
